@@ -1,0 +1,130 @@
+
+html, body {
+  width: 320px;
+  max-height: 500px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.85); 
+  backdrop-filter: blur(20px);          
+  font-family: Arial, sans-serif;
+  color: red;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container  */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 5px solid maroon;     
+  border-radius: 8px;           
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6); 
+  
+  /* border animation */
+  animation: borderPulse 2.5s infinite ease-in-out;
+}
+
+.container * {
+  text-shadow: none;
+  animation: none;
+}
+
+
+.container h1,
+.container h2,
+.container h3,
+#result,
+label,
+.tooltip-text {
+  animation: textPulse 2.5s infinite ease-in-out;
+}
+
+/* Input field */
+input[type="password"] {
+  border: 2px solid #937f7f;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(20, 20, 20, 0.8);
+  color: red;
+}
+
+/* Tooltip */
+.tooltip-container {
+  position: relative;
+  width: 100%;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  color: red;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 1000;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.3);
+}
+
+/* Button */
+button#checkButton {
+  background-color: rgb(123, 202, 234);
+  color: grey;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-shadow: none; /* Keep text sharp */
+}
+
+/* glow on hover */
+button#checkButton:hover {
+  background-color: #66cfff;
+  box-shadow: 0 0 10px rgba(102, 207, 255, 0.8),
+              0 0 20px rgba(102, 207, 255, 0.6);
+}
+
+/* Result text */
+#result {
+  font-size: 14px;
+  color: red;
+}
+
+/* Keyframes (text glow) */
+@keyframes textPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8),
+                 0 0 10px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 1),
+                 0 0 18px rgba(255, 0, 0, 0.9);
+  }
+}
+
+/* Keyframes (border glow )*/
+@keyframes borderPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(128, 0, 0, 0.6),
+                0 0 25px rgba(128, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9),
+                0 0 40px rgba(255, 0, 0, 0.7);
+  }
+}
