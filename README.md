@@ -79,3 +79,10 @@ License
 This project is open-source under the MIT License.
 
 ## SCREENSHOTS ## 
+https://github.com/Jen971/PRODIGY_CS_03/blob/b6f385cb3b3620b15655483e4c43f6149ebf840a/TASK3(1).png
+
+https://github.com/Jen971/PRODIGY_CS_03/blob/b6f385cb3b3620b15655483e4c43f6149ebf840a/TASK%203(2).png
+
+https://github.com/Jen971/PRODIGY_CS_03/blob/b6f385cb3b3620b15655483e4c43f6149ebf840a/TSK3(3).png
+
+https://github.com/Jen971/PRODIGY_CS_03/blob/b6f385cb3b3620b15655483e4c43f6149ebf840a/TASK3(4).png
